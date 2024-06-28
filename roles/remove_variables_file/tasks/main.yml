@@ -1,0 +1,7 @@
+# Remove 
+- name: Remove variable files for images and VMs
+  become: true
+  file:
+    path: '{{project_path}}group_vars/{{group_name}}/{{variable_name}}'
+    state: absent
+  ignore_errors: true

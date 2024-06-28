@@ -1,0 +1,7 @@
+#cloud-config
+hostname: {{item.name}}
+user: {{ansible_user}}
+chpasswd:
+  list: |
+    admin:admin
+  expire: False

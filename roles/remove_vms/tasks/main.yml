@@ -1,0 +1,26 @@
+# tasks file for removeVMs
+- name: Remove VMs
+  community.general.proxmox_kvm:
+    node: node1
+    name: '{{item.name}}'
+    api_user: "{{api_user}}"
+    api_token_id: "{{api_token_id}}"
+    api_token_secret: "{{api_token_secret}}"
+    api_host: '{{api_host}}'
+    timeout: 90
+    state: absent
+  ignore_errors: true  
+  loop: '{{computers}}'    
+  
+
+# Remove cloud-init file
+- name: Remove cloud-init file
+  become: true
+  file:
+    path: '{{snippets_path}}{{item.vmid}}-user.yml'
+    state: absent
+  loop: '{{computers}}'
+  when: 'item.state == "new"'
+  no_log: yes
+  ignore_errors: true
+

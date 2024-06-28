@@ -1,0 +1,5 @@
+  - name: CM20.2-Image
+    cloud_init_file: BIG-IP-Next-CentralManager-20.2.0-0.5.41.qcow2
+    image_url: 'https://downloads-use-f5.s3.amazonaws.com/big-ip_next/central_manager/20.2/english/20.2.0/BIG-IP-Next-CentralManager-20.2.0-0.5.41.qcow?response-content-disposition=attachment%3B%20filename%3DBIG-IP-Next-CentralManager-20.2.0-0.5.41.qcow&X-Amz-Security-Token=FwoGZXIvYXdzEFwaDB83k%2FC3i70xSUoJdyKCAdDR5YDm64vJcqxQSAMotfA2c6O1P%2FrK8cZJnQ7MlO8w0gKw%2Fe9vrtUUlcU7T4mMstx%2BvaEVhBOcpvzsrFsMfyfFrdxO%2FYCUAjivEiyKzstePTbmgfYvomrbk1lhTrXjk96rhSTM8DxcnKiNIumSp62ipl77qej7a8d5bex7ypTVKUwozNP2swYyKGe%2BzPvj9k6boMkyijwLXdf3%2BYZrLNPOhnHBp9u7eSnHoCGqQ2zoEYs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T180500Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=ASIAWZEHK3GDDFNLZJNC%2F20240627%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4cc634165d0366d6caa3c782da2248a2fdee62c6365c3942448057615ebfeb2b'
+    image_checksum: sha256:dfb77495e43c5ce5c15e76ea7c5db7d71e3358d08b2e841d4c1aff9901d5c759
+    state: present

@@ -1,0 +1,25 @@
+- hosts: pvenodes
+  become: false
+  gather_facts: false
+
+  roles:
+  # Create VMs
+    - stop_vms
+    - remove_vms
+
+- hosts: localhost
+  become: false
+  gather_facts: false
+  tasks:
+
+  - name: Remove Variable Files
+    include_role:
+      name: remove_variables_file
+    vars:
+      variable_name: '{{item}}'
+    loop:
+      '{{variable_files}}'
+
+
+
+

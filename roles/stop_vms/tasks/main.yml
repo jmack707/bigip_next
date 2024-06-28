@@ -1,0 +1,13 @@
+---
+# tasks file for roles/stopVMs
+- name: Stop VM
+  community.general.proxmox_kvm:
+    name: "{{item.name}}"
+    api_user: "{{api_user}}"
+    api_token_id: "{{api_token_id}}"
+    api_token_secret: "{{api_token_secret}}"
+    api_host: '{{api_host}}'
+    state: stopped
+    force: true
+  loop: '{{computers}}'
+  ignore_errors: true
