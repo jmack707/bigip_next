@@ -24,7 +24,7 @@ ssh-copy-id root@172.16.1.8
 ```
 
 Create an Inventory file for Ansible with the Proxmox Node
-  Hostname work; however, if you used the IP address for ssh copy use IP address in the inventory file
+  If you used the IP address for ssh copy use IP address in the inventory file
 ```shell
 cat > inventory << EOF
 [pvenodes]
