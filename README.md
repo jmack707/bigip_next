@@ -14,12 +14,15 @@ git clone https://github.com/jmack707/bigip_next.git /opt/ansible
 
 ## Modify the [inventory](/inventory) file
 Change the pvenodes IP address to the address of your Proxmox host
+```
 [pvenodes]
 172.16.1.254
+```
 
 ## Modify the [pvenode/vars](/group_vars/pvenodes/vars) file
 Update the highlighted variables. 
 
+```
 api_host: '{{inventory_hostname}}'
 drive_storage: ***vm-storage***
 drive_format: qcow2
@@ -43,8 +46,10 @@ next_image_url: ***'url from myf5'***
 api_user: ansible@pam
 api_token_id: ansible-token
 api_token_secret: ***'your token' ***
+```
 
 ## VM Images in 110 [variable_files](/variable_files/vms/110.yml)
+```
   - name: ***cm1***
     vmid: ***110***
     node: '{{pve_node}}'
@@ -55,8 +60,10 @@ api_token_secret: ***'your token' ***
     ipv4_address: ***172.16.1.40/24***
     ipv4_gateway: ***172.16.1.1***
     state: new
+```
 
 ## VM Images in 111 [variable_files](/variable_files/vms/111.yml)
+```
   - name: ***next1***
     vmid: ***111***
     node: "{{pve_node}}" 
@@ -71,20 +78,22 @@ api_token_secret: ***'your token' ***
     if1_bridge: '{{linux_bridge1}}'
     interface2: net2
     if2_bridge: '{{linux_bridge2}}'
+```
 
 ## VM Images in 112 [variable_files](/variable_files/vms/112.yml)
-  
->  - name: ***next2***
->    vmid: ***112***
->    node: "{{pve_node}}" 
->    image_file: '{{next_image_name}}'
->    cores: 2
->    memory: 8192
->    ipv4mode: static
->    ipv4_address: ***172.16.1.42/24***
->    ipv4_gateway: ***172.16.1.1***
->    state: new
->    interface1: net1 
->    if1_bridge: ***vmbr110***
->    interface2: net2
->    if2_bridge: ***vmbr120***
+```  
+  - name: ***next2***
+    vmid: ***112***
+    node: "{{pve_node}}" 
+    image_file: '{{next_image_name}}'
+    cores: 2
+    memory: 8192
+    ipv4mode: static
+    ipv4_address: ***172.16.1.42/24***
+    ipv4_gateway: ***172.16.1.1***
+    state: new
+    interface1: net1 
+    if1_bridge: ***vmbr110***
+    interface2: net2
+    if2_bridge: ***vmbr120***
+```
