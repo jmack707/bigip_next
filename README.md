@@ -22,7 +22,7 @@ Change the pvenodes IP address to the address of your Proxmox host
 ## Modify the [pvenode/vars](/group_vars/pvenodes/vars) file
 Update the highlighted variables. 
 
-```
+
 api_host: '{{inventory_hostname}}'  
 drive_storage: ***vm-storage***  
 drive_format: qcow2  
