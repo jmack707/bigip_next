@@ -2,9 +2,8 @@
     vmid: 112
     node: "{{pve_node}}" 
     image_file: '{{next_image_name}}'
-    cores: 4
+    cores: 2
     memory: 8192
-    vlan: 1
     ipv4mode: static
     ipv4_address: 172.16.1.42/24
     ipv4_gateway: 172.16.1.1
