@@ -151,4 +151,4 @@ EOF
 Run the playbook
 ```shell
 ansible-playbook pve_create_vm.yml -i inventory --user=ansible
-```shell
+```
