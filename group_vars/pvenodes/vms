@@ -1,0 +1,40 @@
+computers:
+  - name: cm1
+    vmid: 110
+    node: '{{pve_node}}'
+    image_file: '{{cm_image_name}}'
+    cores: 8
+    memory: 16384
+    ipv4mode: static
+    ipv4_address: 172.16.1.40/24
+    ipv4_gateway: 172.16.1.1
+    state: new
+  - name: next1
+    vmid: 111
+    node: "{{pve_node}}" 
+    image_file: '{{next_image_name}}'
+    cores: 4
+    memory: 8192
+    ipv4mode: static
+    ipv4_address: 172.16.1.41/24
+    ipv4_gateway: 172.16.1.1
+    state: new
+    interface1: net1 
+    if1_bridge: '{{linux_bridge1}}'
+    interface2: net2
+    if2_bridge: '{{linux_bridge2}}'
+  - name: next2
+    vmid: 112
+    node: "{{pve_node}}" 
+    image_file: '{{next_image_name}}'
+    cores: 4
+    memory: 8192
+    vlan: 1
+    ipv4mode: static
+    ipv4_address: 172.16.1.42/24
+    ipv4_gateway: 172.16.1.1
+    state: new
+    interface1: net1 
+    if1_bridge: vmbr110
+    interface2: net2
+    if2_bridge: vmbr120

@@ -2,11 +2,8 @@
 
 This playbook and group of roles deploys BIG-IP Next on Proxmox
 
-## Requirements 
-The below requirements are needed on the host that executes this collection:
-
- - proxmoxer
- - requests
+## Getting Started by configuring the Ansible to access Proxmox
+Follow the steps in the Ansible Setup document 
 
 ## Roles
 

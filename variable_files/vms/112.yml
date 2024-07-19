@@ -1,7 +1,7 @@
   - name: next2
-    vmid: 102
-    node: node2
-    image_file: BIG-IP-Next-20.2.0-2.375.1+0.0.43.qcow2
+    vmid: 112
+    node: "{{pve_node}}" 
+    image_file: '{{next_image_name}}'
     cores: 4
     memory: 8192
     vlan: 1
@@ -10,6 +10,6 @@
     ipv4_gateway: 172.16.1.1
     state: new
     interface1: net1 
-    if1_bridge: vmbr0
+    if1_bridge: vmbr110
     interface2: net2
-    if2_bridge: vmbr0
+    if2_bridge: vmbr120

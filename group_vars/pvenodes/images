@@ -1,3 +1,4 @@
+os_images:
   - name: CM-Image
     cloud_init_file: '{{cm_image_name}}'
     image_url: '{{cm_image_url}}'

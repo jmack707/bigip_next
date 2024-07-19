@@ -9,7 +9,7 @@
     name: '{{item.name}}'
     vmid: '{{item.vmid}}'
     vga: serial0
-    net: '{"net0":"virtio,bridge={{linux_bridge}}"}'
+    net: '{"net0":"virtio,bridge={{linux_bridge1}}"}'
     serial: '{"serial0":"socket"}'
     scsihw: virtio-scsi-single
     scsi:
@@ -30,7 +30,7 @@
     timeout: 700
   loop: '{{computers}}'
   when: 'item.state == "new"'
-  no_log: yes
+  #no_log: yes
 
 # Update network settings
 # A custom file would have been preferred to update the network settings but the problem is it includes a MAC address
