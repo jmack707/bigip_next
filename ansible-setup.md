@@ -15,7 +15,6 @@ sudo apt install ansible
 
 Create a SSH-Key for passwordless access 
 ```shell
-create ssh-key
 ssh-keygen -t ecdsa -b 521
 ```
 
