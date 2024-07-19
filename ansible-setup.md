@@ -95,8 +95,8 @@ ansible pvenodes -m ping -i inventory --user=ansible
   Save the SSH token, Proxmox will not provide it again. We will need it later.
 ```shell
 pveum user add ansible@pam
-pveum acl modify / --role Administrator --user 'ansible@pam' --privsep false
-pveum user token add ansible@pam ansible-token
+pveum acl modify / --role Administrator --user 'ansible@pam' 
+pveum user token add ansible@pam ansible-token --privsep false
 ```
 
 Back to the Ansible node, and create a playbook install Proxmoxer, a wrapper around the APIS for Proxmox
