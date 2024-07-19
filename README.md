@@ -3,7 +3,7 @@
 This playbook and group of roles deploys BIG-IP Next on Proxmox
 
 ## Getting Started by configuring the Ansible to access Proxmox
-Follow the steps in the Ansible Setup document 
+Follow the steps in the [Ansible Setup](/ansible-setup.md) document 
 
 ## Roles
 
