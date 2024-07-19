@@ -20,7 +20,6 @@ ssh-keygen -t ecdsa -b 521
 
 Copy the SSH-Key to the Proxmox Node
 ```shell
-copy ssh-key to pve node
 ssh-copy-id root@172.16.1.8
 ```
 
