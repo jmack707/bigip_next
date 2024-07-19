@@ -97,6 +97,7 @@ ansible pvenodes -m ping -i inventory --user=ansible
 pveum user add ansible@pam
 pveum acl modify / --role Administrator --user 'ansible@pam' 
 pveum user token add ansible@pam ansible-token --privsep false
+pvesm set local --content images,rootdir,vztmpl,backup,iso,snippets
 ```
 
 Back to the Ansible node, and create a playbook install Proxmoxer, a wrapper around the APIS for Proxmox
