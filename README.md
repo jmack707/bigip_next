@@ -73,19 +73,18 @@ api_token_secret: ***'your token' ***
     if2_bridge: '{{linux_bridge2}}'
 
 ## VM Images in 112 [variable_files](/variable_files/vms/112.yml)
-```  
-  - name: ***next2***
-    vmid: ***112***
-    node: "{{pve_node}}" 
-    image_file: '{{next_image_name}}'
-    cores: 2
-    memory: 8192
-    ipv4mode: static
-    ipv4_address: ***172.16.1.42/24***
-    ipv4_gateway: ***172.16.1.1***
-    state: new
-    interface1: net1 
-    if1_bridge: ***vmbr110***
-    interface2: net2
-    if2_bridge: ***vmbr120***
-```
+  
+>  - name: ***next2***
+>    vmid: ***112***
+>    node: "{{pve_node}}" 
+>    image_file: '{{next_image_name}}'
+>    cores: 2
+>    memory: 8192
+>    ipv4mode: static
+>    ipv4_address: ***172.16.1.42/24***
+>    ipv4_gateway: ***172.16.1.1***
+>    state: new
+>    interface1: net1 
+>    if1_bridge: ***vmbr110***
+>    interface2: net2
+>    if2_bridge: ***vmbr120***
