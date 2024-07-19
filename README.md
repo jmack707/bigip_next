@@ -73,6 +73,7 @@ api_token_secret: ***'your token' ***
     if2_bridge: '{{linux_bridge2}}'
 
 ## VM Images in 112 [variable_files](/variable_files/vms/112.yml)
+```  
   - name: ***next2***
     vmid: ***112***
     node: "{{pve_node}}" 
@@ -87,3 +88,4 @@ api_token_secret: ***'your token' ***
     if1_bridge: ***vmbr110***
     interface2: net2
     if2_bridge: ***vmbr120***
+```
