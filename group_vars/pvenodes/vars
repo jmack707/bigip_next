@@ -5,14 +5,14 @@ snippets_storage: local
 snippets_path: '/var/lib/vz/snippets/'
 image_storage: local
 linux_bridge1: vmbr100
-linux_bridge2: vmbr110
-linux_bridge3: vmbr120
 pve_node: pve
 
-cm_image_name: BIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow2
-cm_image_url: 'https://downloads-use-f5.s3.amazonaws.com/big-ip_next/central_manager/20.2/english/20.2.1/BIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow?response-content-disposition=attachment%3B%20filename%3DBIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow&X-Amz-Security-Token=FwoGZXIvYXdzEGcaDEVSd5CtGa2RR0AH0SKCAbo2CqUyHhYbFRzShRGctmy8KSV2g3x%2B9BrEzwj899QXKU85H7MehPfbulDCpKFUqrWInsj8ufSHwjtWmEi7%2BdOhkhpUXKw0QhoBsyR69%2FkSTaHIqC3EolchwUr50KULMIeN7kPBbdXPpvJjMP1FdYyMrn3XR21VHEnxE42zwAsC4AgogtvptAYyKJypLNYhlXMoyYAuy25HiAUQghkJBuvoPUD78hwYyUPv4IOMaQjzOU4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240719T134331Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86398&X-Amz-Credential=ASIAWZEHK3GDDDKIIRPG%2F20240719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=f570d2d8de0efcb43260bde93b1b7143aa56110aa735317ede106f85eac67224'
-cm_image_sum: 'sha512:e8f74997d571e7d95ee5fd23e416ff27ba486fb4fb660ea75df4d240c116ecb632b51021bc28f7ee223d9fa2ba688f4454d5db18d7711ca30325ce30a7ed3402'
+cm_image_name: noble-server-cloudimg-amd64.qcow2
+cm_image_url: 'https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img'
+cm_image_sum: 'sha256:ffafb396efb0f01b2c0e8565635d9f12e51a43c51c6445fd0f84ad95c7f74f9b'
+cm_image_state: present
 
 
-next_image_name: BIG-IP-Next-20.2.1-2.430.2+0.0.48.qcow2
-next_image_url: 'https://downloads-use-f5.s3.amazonaws.com/big-ip_next/virtual_edition/20.2/english/20.2.1/BIG-IP-Next-20.2.1-2.430.2%2B0.0.48.qcow2.tar.gz?response-content-disposition=attachment%3B%20filename%3DBIG-IP-Next-20.2.1-2.430.2%2B0.0.48.qcow2.tar.gz&X-Amz-Security-Token=FwoGZXIvYXdzEGcaDAm43WAVXyBHmPom%2FSKCAUqI%2Bc5qvT2pyBuqv760iPQV7w4oJSyegngCgv%2FNXTC2duarfQX98GCNPgdurauNfuFSF6o5SdWNzU63QIWHvtpRUF%2FzfrdCiDMs7siNAW26%2BjssSWtH2u1MQncvpXOOdmResVx1J0NaZHcY2kOOFIJqPHBGaWBOWpF%2FprJsbhabtCcovdrptAYyKOWobaHKCKHsBeJW8sWJdYVNQsGqyz%2Fb%2FDTA%2FJ6%2BJhe4q2zYskzyMEY%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240719T134221Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=ASIAWZEHK3GDGPERW4TE%2F20240719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c8183f45377a938bdb23fc63f2e6865423a8de2c38882dec4d98c94ee28d7b11'
+next_image_name: "BIG-IP-Next-20.2.1-2.430.2+0.0.48.qcow2"
+next_image_url: ''
+next_image_state: present

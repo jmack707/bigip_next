@@ -2,4 +2,4 @@
     cloud_init_file: '{{cm_image_name}}'
     image_url: '{{cm_image_url}}'
     image_checksum: '{{cm_image_sum}}'
-    state: present
+    state: '{{cm_image_state}}'
