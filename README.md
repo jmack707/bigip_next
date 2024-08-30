@@ -14,10 +14,10 @@ git clone https://github.com/jmack707/bigip_next.git /opt/ansible
 
 ## Modify the [inventory](/inventory) file
 Change the pvenodes IP address to the address of your Proxmox host
-```
+
 [pvenodes]
-172.16.1.254
-```
+***172.16.1.254***
+
 
 ## Modify the [pvenode/vars](/group_vars/pvenodes/vars) file
 Update the highlighted variables. 
@@ -36,7 +36,7 @@ pve_node: **pve**
 
 cm_image_name: ***BIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow2***  
 cm_image_url: ***'url from myf5'***  
-cm_image_sum: ****'image check sum'****  
+cm_image_sum: ****'image check sum'*** 
 
 
 next_image_name: ***BIG-IP-Next-20.2.1-2.430.2+0.0.48.qcow2***  
@@ -45,7 +45,7 @@ next_image_url: ***'url from myf5'***
 ## Update the Ansible token in [pvenode/vars](/group_vars/pvenodes/vault)
 api_user: ansible@pam  
 api_token_id: ansible-token  
-api_token_secret: ***'your token' ***  
+api_token_secret: *** your token ***  
 
 
 ## VM Images in 110 [variable_files](/variable_files/vms/110.yml)

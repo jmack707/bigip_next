@@ -9,6 +9,6 @@
     ipv4_gateway: 172.16.1.1
     state: new
     interface1: net1 
-    if1_bridge: vmbr110
+    if1_bridge: '{{linux_bridge1}}'
     interface2: net2
-    if2_bridge: vmbr120
+    if2_bridge: '{{linux_bridge2}}'

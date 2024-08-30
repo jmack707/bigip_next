@@ -1,4 +1,4 @@
-  - name: Next-Image
+  - name: '{{next_image_name}}'
     cloud_init_file: '{{next_image_url}}'
     image_url: '{{next_image_url}}'
     state: present
