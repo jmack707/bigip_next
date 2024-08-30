@@ -1,4 +1,4 @@
-  - name: Next20.2-Image
-    cloud_init_file: BIG-IP-Next-20.2.0-2.375.1+0.0.43.qcow2
-    image_url: 'https://downloads-use-f5.s3.amazonaws.com/big-ip_next/virtual_edition/20.2/english/20.2.0/BIG-IP-Next-20.2.0-2.375.1%2B0.0.43.qcow2.tar.gz?response-content-disposition=attachment%3B%20filename%3DBIG-IP-Next-20.2.0-2.375.1%2B0.0.43.qcow2.tar.gz&X-Amz-Security-Token=FwoGZXIvYXdzEFwaDFWP9pnHQWofGztWGSKCAZkXluk9KOwVa1OR2sQZxuA08ci4sxppHcZlGYH64cr%2BRRHMg3ZXcuSTI4U%2BsCH6fGElb6cP0lQbVFgWpavDdi9E7QPm6ce9myh%2BLnLVYuMq87YI411eyWDeVG0YmL8MoDQfTxFGiupJYpTRA1XdchEkz5CtLESFnc2yO%2BzEMLeOs6soit%2F2swYyKAuu%2BG74jgBC%2Bctwci%2Bj%2Fc%2Bi%2Fu56x9RzAOo1scm1SMVGsjtyO0hfBx4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240627T182930Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=ASIAWZEHK3GDLDBF5H76%2F20240627%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9a4dc4be840494d43242e539cfb0bd3d67581f3667ba179b341cdcf13e70befe'
+  - name: '{{next_image_name}}'
+    cloud_init_file: '{{next_image_url}}'
+    image_url: '{{next_image_url}}'
     state: present

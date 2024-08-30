@@ -6,17 +6,15 @@
     dest: '{{image_path}}'
     remote_src: yes
     list_files: yes
-    creates: '{{image_path}}{{item.cloud_init_file}}'
+    creates: '{{image_path}}{{item.name}}'
   loop: '{{compressed_images}}'
   when: 'item.state == "present"'
-
-
 
 
 # Delete cloud-init images, that are no longer needed
 - name: Delete unused cloud-init images
   file:
-    path: '{{image_path}}{{item.cloud_init_file}}'
+    path: '{{image_path}}{{item.name}}'
     state: absent
   loop: '{{compressed_images}}'
   when: 'item.state == "absent"'

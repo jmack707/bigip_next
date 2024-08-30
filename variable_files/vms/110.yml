@@ -1,10 +1,9 @@
   - name: cm1
-    vmid: 100
-    node: node2
-    image_file: BIG-IP-Next-CentralManager-20.2.0-0.5.41.qcow2
+    vmid: 110
+    node: '{{pve_node}}'
+    image_file: '{{cm_image_name}}'
     cores: 8
     memory: 16384
-    vlan: 1
     ipv4mode: static
     ipv4_address: 172.16.1.40/24
     ipv4_gateway: 172.16.1.1

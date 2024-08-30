@@ -98,10 +98,12 @@ pveum user add ansible@pam
 pveum acl modify / --role Administrator --user 'ansible@pam' 
 pveum user token add ansible@pam ansible-token --privsep false
 pvesm set local --content images,rootdir,vztmpl,backup,iso,snippets
+
 ```
 
-Back to the Ansible node, and create a playbook install Proxmoxer, a wrapper around the APIS for Proxmox
-https://proxmoxer.github.io/docs/2.0/
+## Back to the Ansible node 
+  Create a playbook install Proxmoxer, a wrapper around the APIS for Proxmox
+  https://proxmoxer.github.io/docs/2.0/
 
 ```shell
 cat > pve_install_proxmoxer.yml << EOF
