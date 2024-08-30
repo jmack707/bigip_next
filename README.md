@@ -45,7 +45,7 @@ next_image_url: ***'url from myf5'***
 ## Update the Ansible token in [pvenode/vars](/group_vars/pvenodes/vault)
 api_user: ansible@pam  
 api_token_id: ansible-token  
-api_token_secret: *** your token ***  
+api_token_secret: ***your token***  
 
 
 ## VM Images in 110 [variable_files](/variable_files/vms/110.yml)

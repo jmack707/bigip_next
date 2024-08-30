@@ -10,10 +10,10 @@ linux_bridge3: vmbr120
 pve_node: pve
 
 cm_image_name: BIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow2
-cm_image_url: 'https://downloads-use-f5.s3.amazonaws.com/big-ip_next/central_manager/20.2/english/20.2.1/BIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow?response-content-disposition=attachment%3B%20filename%3DBIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow&X-Amz-Security-Token=FwoGZXIvYXdzEFQaDEfYnH7fimd39LeFniKCASXH9Ezuoc8OlVcQeAzRMoTO8uo6QghyiuFIRVs9TgkFvNrjQYR03qYfiz7xqm%2BviLCVhzoRkcNvDtGwR9OCuaiDk4I6%2BjpXzRWfAd%2BnEyYrBpn2bz5ZDe0Z%2BReodaj5WTxKIMahLHucyPhhUIRk57af3jN6SnVMlVBCg9PqXE%2FcbCsol83GtgYyKMfoePYwaJlvpLWCuWJkF5mN2ewkzcaUa9E14VlaXiGTt%2FLYNxUgGkI%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240830T110144Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86398&X-Amz-Credential=ASIAWZEHK3GDJ3CZECXB%2F20240830%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d9935d4f53326ba822f323e63c5d5931d889d684a1180d7254b289df4771411c'
-cm_image_sum: 'sha512:e8f74997d571e7d95ee5fd23e416ff27ba486fb4fb660ea75df4d240c116ecb632b51021bc28f7ee223d9fa2ba688f4454d5db18d7711ca30325ce30a7ed3402'
+cm_image_url: 'https://url'
+cm_image_sum: 'sha512:checksum'
 
 
 next_image_name: BIG-IP-Next-20.2.1-2.430.2+0.0.48.qcow2
-next_image_url: 'https://downloads-use-f5.s3.amazonaws.com/big-ip_next/virtual_edition/20.2/english/20.2.1/BIG-IP-Next-20.2.1-2.430.2%2B0.0.48.qcow2.tar.gz?response-content-disposition=attachment%3B%20filename%3DBIG-IP-Next-20.2.1-2.430.2%2B0.0.48.qcow2.tar.gz&X-Amz-Security-Token=FwoGZXIvYXdzEFQaDEPi3pkJpoeqp1%2B32SKCAbvr2UBBOHx7%2FsQotisy20A5N3rpa%2Fnh0uJQ2EMN7d7QL5WnmwJXSMfkD9jP6u9qOy79lKHGof4gucUUMuWY0g97S0TPklCu3%2Bgv9He0JDe5InhLX56JwbboCIr07Beu4eHVrfmhqAXwJ2SEoL9fss8ArCBb7bj0xynP%2BtWAaXlrCOko0M3GtgYyKDgM1AvXqb8jOAoaEjKgYVD5FfMOjSw7N2Bs2yJpnjfnN6y2rSN%2Fk1I%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240830T110240Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=ASIAWZEHK3GDCUCLVA7U%2F20240830%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6aed6c1857bfb0115035ec6d8f1edf68d16f7aee257ea88d081260aa45a5e099'
+next_image_url: 'https://url'
 
