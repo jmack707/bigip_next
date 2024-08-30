@@ -1,5 +1,5 @@
 
-project_path: '/opt/ansible/bigip_next/'
+project_path: '../mgt-cluster/'
 image_path: '/var/lib/vz/images/0/'
 group_name: pvenodes
 variable_files:

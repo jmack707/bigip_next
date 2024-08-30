@@ -19,9 +19,9 @@
   roles:
 
   # Download cloud-init images
-    - download_cloud_init_images
+    - role: download_cloud_init_images
   # Download and uncompress cloud image
-    - untar_images
+    - role: untar_images
   # Create cloud-init files
     - create_user_files
 

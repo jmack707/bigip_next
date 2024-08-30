@@ -9,7 +9,7 @@
   get_url:
     url: '{{item.image_url}}'
     dest: '{{image_path}}{{item.cloud_init_file}}'
-    checksum: '{{item.image_checksum}}'
+    #checksum: '{{item.image_checksum}}'
   loop: '{{os_images}}'
   when: 'item.state == "present"'
 

@@ -1,3 +1,7 @@
 api_user: ansible@pam
 api_token_id: ansible-token
+<<<<<<< HEAD
 api_token_secret: 'your token' 
+=======
+api_token_secret: 'token' 
+>>>>>>> 67e9a10c068faffd8d6b33ecb1d0e589b100db34

@@ -50,7 +50,7 @@
   loop: '{{computers}}'
   when: (item.state == "new") and
         (item.ipv4mode == 'static')
-  no_log: yes
+  #no_log: yes
 
 - name: Adding Interface1 targeting the vm by id
   community.general.proxmox_nic:

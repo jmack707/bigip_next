@@ -1,0 +1,10 @@
+  - name: mgt-cluster
+    vmid: 105
+    node: '{{pve_node}}'
+    image_file: '{{cm_image_name}}'
+    cores: 4
+    memory: 8192
+    state: new
+    ipv4mode: static
+    ipv4_address: 172.16.1.10/24
+    ipv4_gateway: 172.16.1.1
